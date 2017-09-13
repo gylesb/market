@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Omazon: Inline shopping for electronics or whatever you may need</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Omazon</h1>
+        <p>Become a Prune today!</p>
+      </div>
+      <div class="sidebar">
+        <img class="logo" src ="img/omazon.png" height="100px" alt="logo">
+        <h5>Which department would you like to go to?</h5>
+        <ul>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Alcohol</a></li>
+          <li><a href="#">Left socks only</a></li>
+          <li><a href="https://www.amazon.com/">Amazon's homepage</a></li>
+        </ul>
+      </div>
+      <form id="formOne">
+        <div class="well">
+          <div class="radio">
+            <label>
+              <input type="radio" name="item" value="prosecco" checked>
+              Prosecco
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="item" value="iphone" checked>
+              iPhone 9
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="item" value="universe">
+              Samsung Universe
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="item" value="can">
+              Empty Can
+            </label>
+          </div>
+        </div>
+        <div class="well">
+          <div class="form-group">
+            <label for="name">Please write your full name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="form-group">
+            <label for="address">Please write your address:</label>
+            <input type="text" id="address">
+          </div>
+          <button type="button" name="button"></button>
+        </div>
+      </form>
+    </div>
+    <div id="story">
+      <h1>Your receipt:</h1>
+      <p>Thank you so much <span class="name"></span> for shopping with us at Omazon!</p>
+      <p>Your <input:radio[name=item]:checked> will be arriving at <span class="address"></span> within 24 days.</p>
+    </div>
+    </div>
+  </body>
+</html>

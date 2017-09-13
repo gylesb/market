@@ -2,3 +2,11 @@
   margin: auto;
   background-color: #77D0FC;
 }
+
+#receipt {
+  display: none;
+}
+
+.jumbotron {
+  background-color: skyblue;
+}

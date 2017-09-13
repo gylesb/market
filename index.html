@@ -28,27 +28,28 @@
       </div>
       <form id="formOne">
         <div class="well">
+          <h4>What would you like to buy?</h4>
           <div class="radio">
             <label>
-              <input type="radio" name="item" value="prosecco" checked>
+              <input id="iteminput" type="radio" name="item" value="prosecco" checked>
               Prosecco
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="item" value="iphone" checked>
+              <input id="iteminput" type="radio" name="item" value="iphone" checked>
               iPhone 9
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="item" value="universe">
+              <input id="iteminput" type="radio" name="item" value="universe">
               Samsung Universe
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="item" value="can">
+              <input id="iteminput" type="radio" name="item" value="can">
               Empty Can
             </label>
           </div>
@@ -56,20 +57,20 @@
         <div class="well">
           <div class="form-group">
             <label for="name">Please write your full name:</label>
-            <input type="text" id="name">
+            <input type="text" id="name" class="form-control">
           </div>
           <div class="form-group">
             <label for="address">Please write your address:</label>
-            <input type="text" id="address">
+            <input type="text" id="address" class="form-control">
           </div>
-          <button type="button" name="button"></button>
+          <button type="submit" id="btnSubmit">Submit</button>
         </div>
       </form>
     </div>
-    <div id="story">
+    <div id="receipt">
       <h1>Your receipt:</h1>
-      <p>Thank you so much <span class="name"></span> for shopping with us at Omazon!</p>
-      <p>Your <input:radio[name=item]:checked> will be arriving at <span class="address"></span> within 24 days.</p>
+      <h5>Thank you so much <span class="name"></span> for shopping with us at Omazon!</h5>
+      <h5>Your <span class="item"></span> will be arriving at <span class="address"></span> within 24 days.</h5>
     </div>
     </div>
   </body>
